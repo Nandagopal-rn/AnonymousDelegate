@@ -6,11 +6,11 @@ namespace AnonymousActionDelegate
     {
         static void Main(string[] args)
         {
-            Action<int, int> SumAction = delegate (int firstNumber, int secondNumber)
+            Action<int, int> sumAction = delegate (int firstNumber, int secondNumber)
             {
                 Console.WriteLine($"Sum is {firstNumber + secondNumber}");
             };
-            Action<int, int> DifferenceAction = delegate (int firstNumber, int secondNumber)
+            Action<int, int> differenceAction = delegate (int firstNumber, int secondNumber)
             {
                 Console.WriteLine($"Difference is {firstNumber - secondNumber}");
             };
@@ -23,8 +23,8 @@ namespace AnonymousActionDelegate
                 Console.WriteLine($"Quotient is {firstNumber / secondNumber}");
             };
 
-            SumAction(20, 20);
-            DifferenceAction(20, 20);
+            sumAction(20, 20);
+            differenceAction(20, 20);
             MultiplyAction(20, 20);
             DivisionAction(20, 20);
         }
